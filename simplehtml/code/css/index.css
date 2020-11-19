@@ -1,0 +1,609 @@
+.nav {
+    height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-box {
+    width: 1190px;
+    text-align: right;
+}
+
+.nav-box ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+.nav-box ul li:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: block;
+}
+
+.nav-box ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.nav-box ul li a:hover {
+    color: #f10215;
+}
+
+.header-box {
+    height: 140px;
+    background: #ffffff;
+}
+
+.header {
+    width: 1190px;
+    display: flex;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.header .logo-box {
+    width: 190px;
+    height: 120px;
+}
+
+.header .search-box {
+    padding: 0px 10px;
+    width: 790px;
+}
+
+.header .search-bar {
+    padding: 10px 0px 0px 50px;
+    display: flex;
+}
+
+.header .recommend {
+    font-size: 12px;
+    padding: 5px 0px 15px 50px;
+}
+
+.header .recommend a {
+    color: #999;
+}
+
+.search-bar input {
+    border: 1px solid #e1251b;
+    width: 500px;
+    height: 30px;
+    padding: 2px 10px;
+    outline: none;
+}
+
+.search-bar .search-btn {
+    width: 50px;
+    height: 34px;
+    border: 1px solid #e1251b;
+    background: #e1251b;
+    cursor: pointer;
+    color: #ffffff;
+    line-height: 34px;
+    text-align: center;
+}
+
+.search-bar .iconfont-search {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search-bar .cart-btn {
+    margin: 0px 0px 0px 20px;
+    border: 1px solid #eee;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #e1251b;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-bar .iconfont-cart {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-box ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.search-box ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.content .wrapper {
+    margin: 0px auto;
+    width: 1190px;
+    padding: 10px 0px;
+    display: flex;
+}
+
+.menu-box {
+    width: 190px;
+    background: #ffffff;
+    position: relative;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+
+.menu-box ul li {
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 12px;
+    overflow: hidden;
+}
+
+.menu-box ul li:hover {
+    background: #d9d9d9;
+}
+
+.menu-box ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-box ul li a:hover {
+    color: #e1251b;
+}
+
+.menu-box .sub-menu {
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    background: #ffffff;
+    z-index: 10;
+    width: 900px;
+    padding: 20px;
+    font-size: 12px;
+    display: none;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+}
+
+.menu-box .sub-menu.active {
+    display: block;
+}
+
+.sub-menu .left-box {
+    float: left;
+    max-width: 700px;
+}
+.sub-menu .right-box {
+    float: right;
+    width: 168px;
+}
+
+.sub-menu .pic-box {
+    margin: 0px 0px 10px 0px;
+}
+
+.sub-menu .pic-box:last-child {
+    margin: 0px;
+}
+
+.sub-menu .menu-title {
+    margin: 0px 0px 10px 0px;
+}
+
+.sub-menu .menu-title .item {
+    display: inline-block;
+    background: #333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px;
+    color: #ffffff;
+}
+
+.sub-menu .menu-title .item:hover {
+    background: #e1251b;
+}
+
+.sub-menu dl {
+    display: flex;
+}
+
+.sub-menu dt {
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.sub-menu dd a {
+    padding: 4px 8px 4px 8px;
+    white-space: nowrap;
+}
+
+.slider-box {
+    margin-right: 10px;
+}
+
+.slider-box .slider {
+    position: relative;
+    width: 590px;
+    height: 470px;
+    overflow: hidden;
+}
+
+.slider-box .slider ul {
+    position: absolute;
+    top: 0px;
+    left: -590px;
+    width: 500%;
+    height: 100%;
+    /* transition: left 1s linear; */
+}
+
+.slider-box .slider ul li {
+    float: left;
+}
+
+.slider-box .left-box {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-box .right-box {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-box .left-box, .slider-box .right-box span {
+    font-size: 24px;
+}
+
+
+.slider-box .index-box {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+
+}
+
+.slider-box .index-box > ol {
+    height: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slider-box .index-box > ol > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+
+.slider-box .index-box > ol > li.active {
+    background: #e1251b;
+}
+
+.ad-box {
+    width: 190px;
+    margin-right: 10px;
+}
+
+.ad-box .pic-box:not(:last-child) {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.new-box {
+    width: 160px;
+    background: #fff;
+    padding: 15px;
+}
+
+.new-box .new-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.new-box ul {
+    font-size: 12px;
+}
+
+.new-box ul li {
+    padding: 5px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.new-box ul li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.new-box ul li a span {
+    color: #e1251b;
+    padding: 2px 4px;
+    background: rgba(225,37,27,.08);
+    margin-right: 5px;
+}
+
+.seckill {
+    color: #fff;
+    background: #fff;
+}
+
+.seckill .seckill-time {
+    height: 260px;
+    width: 190px;
+    float: left;
+    background: url("http://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/613f39ecb60e42dfec798a4ffc0bc012.png");
+    background-size: contain;
+    background-position: 50%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.seckill .seckill-time .title {
+    font-size: 30px;
+    padding: 10px 0px 100px 0px;
+}
+
+.seckill .seckill-time .time {
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+.seckill .seckill-time .time span {
+    font-size: 18px;
+}
+
+.seckill .seckill-time .count-down {
+    font-size: 20px;
+}
+
+.seckill .seckill-time .count-down span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin: 0px 8px;
+    background: #2f3430;
+}
+
+.seckill .seckill-goods {
+    float: left;
+}
+
+.seckill .seckill-goods ul li {
+    width: 200px;
+    height: 260px;
+    display: inline-block;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.seckill .seckill-goods .pic-box {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.seckill .seckill-goods .name {
+    color: #333333;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.seckill .seckill-goods .price {
+    border: 1px solid #e1251b;
+    margin: 10px 0px 0px 0px;
+    background: #e1251b;
+    overflow: hidden;
+}
+
+.seckill .seckill-goods .price i {
+    font-size: 12px;
+    font-style: normal;
+}
+
+.seckill .seckill-goods .price-miaosha {
+    float: left;
+    width: 92px;
+    text-align: center;
+}
+
+.seckill .seckill-goods .price-origin {
+    float: right;
+    width: 66px;
+    text-align: center;
+    background: #ffffff;
+    color: #999;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: line-through;
+}
+
+.seckill .seckill-ad {
+    float: right;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.seckill .seckill-ad .desc {
+    text-align: center;
+    margin: 20px 0px;
+    color: #666666;
+}
+
+.direction {
+    flex-direction: column;
+}
+
+.recommend-title {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+.recommend-title h3 {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.tab-box {
+    background: #fff;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+
+.tab-box ul {
+    display: flex;
+    padding: 10px 50px;
+}
+
+.tab-box ul li {
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+
+.tab-box ul li:not(:last-child):after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    content: "";
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(180deg, #ffffff, #dfdfdf, #ffffff);
+}
+
+.tab-box ul li .title {
+    font-size: 16px;
+    margin: 0px 0px 1px 0px;
+
+}
+
+.tab-box ul li .title span {
+    padding: 1px 15px;
+    border-radius: 50px;
+}
+
+.tab-box ul li .sub-title {
+    color: #999;
+}
+
+.tab-box ul li.active .title span {
+    color: #fff;
+    background: #f10215;
+}
+
+.tab-box ul li.active .sub-title {
+    color: #f10215;
+}
+
+.content-box {
+
+}
+
+.content-box ul {
+    display: flex;
+    background: #f4f4f4;
+    flex-wrap: wrap;
+}
+
+.content-box ul li {
+    box-sizing: border-box;
+    background: #fff;
+    width: 230px;
+    height: 320px;
+    padding: 20px 15px;
+    margin: 0px 10px 10px 0px;
+}
+
+.content-box ul li:nth-child(5n) {
+    margin-right: 0px;
+}
+
+.content-box ul li a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.content-box .pic-box {
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.content-box .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    height: 48px;
+    margin-bottom: 10px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.content-box .name i {
+    padding: 1px 5px;
+    background: #e1251b;
+    color: #fff;
+    font-style: normal;
+    border-radius: 3px;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+.content-box .price {
+    color: #e1251b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-box .price i {
+    font-size: 12px;
+    font-style: normal;
+    margin-right: 2px;
+}
+
