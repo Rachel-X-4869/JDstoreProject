@@ -1,0 +1,493 @@
+.nav {
+    height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+.nav-box {
+    width: 100%;
+    margin-top: -60px;
+    text-align: center;
+}
+.nav-box ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+.nav-box ul li:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: block;
+}
+
+.nav-box ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.nav-box ul li a:hover {
+    color: #f10215;
+}
+.header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.header .logo-box {
+    width: 250px;
+    height: 150px;
+}
+.header .search-box {
+    padding: 0px 10px;
+    width: 900px;
+    margin-left: 50px;
+}
+.header .ad-box {
+    width: 250px;
+    height: 150px;
+}
+.header .search-bar {
+    padding: 10px 0px 0px 10px;
+    display: flex;
+}
+.header .recommend {
+    font-size: 14px;
+    margin: auto;
+    margin-left: -100px;
+    margin-top: 5px;
+    padding: 5px 0px 15px 50px;
+}
+.search-bar input {
+    border: 2px solid #e1251b;
+    width: 500px;
+    height: 30px;
+    padding: 2px 10px;
+    outline: none;
+}
+
+.search-bar .search-btn {
+    width: 50px;
+    height: 34px;
+    border: 2px solid #e1251b;
+    background: #e1251b;
+    cursor: pointer;
+    color: #ffffff;
+    line-height: 34px;
+    text-align: center;
+}
+
+.search-bar .iconfont-search {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search-bar .cart-btn {
+    
+    margin: 0px 0px 0px 20px;
+    border: 1px solid #eee;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #e1251b;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-bar .iconfont-cart {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-box ul {
+    margin-left: -300px;
+    margin-top: 10px;
+}
+
+.search-box ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.search-box ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.bu-recommend ul{
+    margin-left: -100px;
+    margin-top: 0px;
+}
+.bu-recommend ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.bu-recommend ul li a {
+    color: #e1251b;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.menu-box {
+    width: 25%;
+    background: #ffffff;
+    position: relative;
+    padding: 10px 0px;
+    margin-right: 10px;
+    height: 450px;
+}
+
+.menu-box ul li {
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 12px;
+    overflow: hidden;
+}
+
+.menu-box ul li:hover {
+    background: #d9d9d9;
+}
+
+.menu-box ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-box ul li a:hover {
+    color: #e1251b;
+}
+
+#menu {
+    margin-left: 100px;
+    margin-top: 10px
+}
+
+
+.menu-box .sub-menu {
+    position: absolute;
+    top: 1px;
+    left: 287px;
+    background: #ffffff;
+    z-index: 10;
+    width: 560px;
+    padding: 20px;
+    font-size: 12px;
+    display: none;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+}
+
+.menu-box .sub-menu.active {
+    display: block;
+}
+
+.sub-menu .left-box {
+    float: left;
+    max-width: 700px;
+}
+
+.sub-menu .menu-title {
+    margin: 0px 0px 10px 0px;
+}
+
+.sub-menu .menu-title .item {
+    display: inline-block;
+    background: #333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px;
+    color: #ffffff;
+}
+
+.sub-menu .menu-title .item:hover {
+    background: #e1251b;
+}
+
+.sub-menu dl {
+    display: flex;
+}
+
+.sub-menu dt {
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.sub-menu dd a {
+    padding: 4px 8px 4px 8px;
+    white-space: nowrap;
+}
+
+.slider-box {
+    height: 490px;
+    width: 50%;
+}
+
+.slider-box .slider {
+    position: relative;
+    width: 590px;
+    height: 470px;
+    overflow: hidden;
+}
+
+.slider-box .slider ul {
+    position: absolute;
+    top: 0px;
+    left: -590px;
+    width: 500%;
+    height: 100%;
+    /* transition: left 1s linear; */
+}
+
+.slider-box .slider ul li {
+    float: left;
+}
+
+.slider-box .left-box {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-box .right-box {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-box .left-box, .slider-box .right-box span {
+    font-size: 24px;
+}
+
+
+.slider-box .index-box {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+
+}
+
+.slider-box .index-box > ol {
+    height: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slider-box .index-box > ol > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+
+.slider-box .index-box > ol > li.active {
+    background: #e1251b;
+}
+
+.new-box {
+    width: 20%;
+    background: #fff;
+    padding: 15px;
+    margin: 10px;
+    margin-right:100px;
+    height: 440px;
+}
+
+.new-box .new-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.new-box ul {
+    font-size: 14px;
+}
+
+.new-box ul li {
+    padding: 5px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.new-box ul li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.new-box ul li a span {
+    color: #e1251b;
+    padding: 2px 4px;
+    background: rgba(225,37,27,.08);
+    margin-right: 5px;
+}
+.footer-box {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.footer-box ul {
+    margin-top: 10px;
+}
+
+.footer-box ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.footer-box ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.seckill {
+    color: #fff;
+    background: #fff;
+    margin-left: 100px;
+}
+
+.seckill .seckill-time {
+    height: 260px;
+    width: 250px;
+    float: left;
+    background: url("http://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/613f39ecb60e42dfec798a4ffc0bc012.png");
+    background-size: contain;
+    background-position: 50%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.seckill .seckill-time .title {
+    font-size: 30px;
+    padding: 10px 0px 100px 0px;
+}
+
+.seckill .seckill-time .time {
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+.seckill .seckill-time .time span {
+    font-size: 18px;
+}
+
+.seckill .seckill-time .count-down {
+    font-size: 20px;
+}
+
+.seckill .seckill-time .count-down span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin: 0px 8px;
+    background: #2f3430;
+}
+
+.seckill .seckill-goods {
+    float: left;
+}
+
+.seckill .seckill-goods ul li {
+    width: 238px;
+    height: 260px;
+    display: inline-block;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.seckill .seckill-goods .pic-box {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.seckill .seckill-goods .name {
+    color: #333333;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.seckill .seckill-goods .price {
+    border: 1px solid #e1251b;
+    margin: 10px 0px 0px 0px;
+    background: #e1251b;
+    overflow: hidden;
+}
+
+.seckill .seckill-goods .price i {
+    font-size: 13px;
+    font-style: normal;
+}
+
+.seckill .seckill-goods .price-miaosha {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.seckill .seckill-goods .price-origin {
+    float: right;
+    width: 80px;
+    text-align: center;
+    background: #ffffff;
+    color: #999;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: line-through;
+}
+
+.seckill .seckill-ad {
+    float: right;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.seckill .seckill-ad .desc {
+    text-align: center;
+    margin: 20px 0px;
+    color: #666666;
+}
